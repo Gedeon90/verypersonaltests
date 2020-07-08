@@ -13,21 +13,19 @@
        <button onclick="AbreAviso()">Pulsa para abrir el aviso</button>
     </header>
     <script>
-        // window.open('img.png','_self','menubar=no,toolbar=no,directorires=no,resizable=yes,location=no,scrollbars=no,status=no,titlebar=no,height=715,width=460')
-	var windowObjectReference;
+	var avisoPopUp
 
-	function openRequestedPopup() {
-	  windowObjectReference = window.open(
+	function abreAvisoPopUp() {
+	  avisoPopUp = window.open(
 	    "img.png",
 	    "Aviso Video Llamada",
 	    "scrollbars=no,status=no,directories=no,menubar=no,titlebar=no,height=722,width=445"
 	  );
 	}
 	function AbreAviso() {
-
-		setTimeout(function(){openRequestedPopup()},2000)
+		// setTimeout(function(){abreAvisoPopUp()},3000)
+		abreAvisoPopUp()
 	}
-
     </script>
 </body>
 </html>
